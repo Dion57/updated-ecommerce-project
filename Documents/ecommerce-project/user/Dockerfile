@@ -8,7 +8,7 @@ WORKDIR /app
 COPY . /app
 
 # Install Flask
-RUN pip install --no-cache-dir Flask
+RUN pip install Flask
 
 # Make port 5001 available to the world outside this container
 EXPOSE 5003

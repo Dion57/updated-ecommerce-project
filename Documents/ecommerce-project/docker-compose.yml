@@ -1,4 +1,4 @@
-version: '3'
+version: '3.8'
 services:
   product:
     build: ./product
@@ -7,14 +7,14 @@ services:
     networks:
       - ecommerce-network
   
-  order_service:
+  order:
     build: ./order
     ports:
       - "5002:5002"
     networks:
       - ecommerce-network
 
-  user_service:
+  user:
     build: ./user
     ports:
       - "5003:5003"
